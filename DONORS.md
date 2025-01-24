@@ -7,734 +7,515 @@ support of generous donors.
 The ways to donate to the project, as well as details on how the funds are
 used, are described on [Godot's website](https://godotengine.org/donate).
 
-The following is a list of the current monthly donors, to be have their
+The following is a list of the current monthly donors, who will have their
 generous deed immortalized in the next stable release of Godot Engine.
+
+## Patrons
+
+    Khronos® Group <https://www.khronos.org/>
+    OSS Capital <https://oss.capital/>
 
 ## Platinum sponsors
 
-    Gamblify <https://www.gamblify.com>
-    Heroic Labs <https://heroiclabs.com>
-    Spiffcode <http://www.spiffcode.com>
+    Google Play <https://play.google.com>
+    Ramatak <https://ramatak.com/>
+    V-Sekai <https://github.com/V-Sekai>
+    W4 Games <https://w4games.com/>
 
 ## Gold sponsors
 
-    None currently, become one! <https://godotengine.org/donate>
+    Mega Crit <https://www.megacrit.com/>
+    Pirate Software <https://gopiratesoftware.com>
+    Prehensile Tales <https://prehensile-tales.com>
+    Robot Gentleman <http://robotgentleman.com/>
 
 ## Silver sponsors
 
-    ASIFA-Hollywood <https://www.asifa-hollywood.org>
-    Moonwards <https://www.moonwards.com>
-    Zenva Academy <https://academy.zenva.com>
+    Broken Rules <https://brokenrul.es>
+    Chasing Carrots <https://www.chasing-carrots.com>
+    Copia Wealth Studios <https://copiawealthstudios.com/>
+    Indoor Astronaut <https://indoorastronaut.ch/>
+    LoadComplete <https://loadcomplete.com/>
+    Null <https://null.com/>
+    Orbital Knight <https://www.orbitalknight.com/>
+    Playful Studios <https://playfulstudios.com/>
+    Re-Logic <https://re-logic.com/>
 
-## Bronze sponsors
+## Diamond members
 
-    Brandon Lamb
+    Bippinbits <http://domekeepergame.com/>
+    Sylv <https://rankith.itch.io/unnamed-space-idle-prototype>
+    And 3 anonymous donors
+
+## Titanium members
+
+    Adriaan de Jongh <https://adriaan.games>
+    Anitya Space <https://www.anitya.space>
+    Basically Games
+    FDG Entertainment <https://www.fdg-entertainment.com>
+    Game Dev Artisan <https://gamedevartisan.com>
     Garry Newman
-    Gordon MacPherson
-    Hunter Dickson
-    Kyle Szklenski
+    Kenney <https://kenney.nl/>
+    Libretrend <https://libretrend.com>
+    Life Art Studios <https://lifeartstudios.net/>
+    Lucid Silence Games
+    Matthew Campbell
+    PolyMars <https://polymars.dev/>
+    Razenpok <https://www.youtube.com/watch?v=-QxI-RP6-HM>
+    RPG in a Box <https://www.rpginabox.com>
+    Smirk Software <https://smirk.gg>
+    Studio Sunshower <https://www.studiosunshower.com/>
+    TrampolineTales <https://TrampolineTales.com/>
+    粟二华 (Su Erhua)
+    And 4 anonymous donors
 
-## Mini sponsors
+## Platinum members
 
-    AD Ford
-    Alejandro Saucedo
-    alex brown
-    Andrew Dunai
-    anti666
-    Ben Nolan
-    blurp
-    CD
-    Christian Baune
-    Christoffer Sundbom
-    Christopher Montesano
+    Andy Touch
+    BlockImperiumGames (BIG)
+    Christopher Shifflett
+    Christoph Woinke
+    Cody Bentley
     Darrin Massena
-    David Mydlarz
-    Digital Grows
-    Dov Zimring
     Edward Flick
-    Florian Neumann
-    Gamechuck
-    GameDev.net
-    Hein-Pieter van Braam
-    Jacob McKenney
-    Jasper Brooks
-    Javary Co.
-    Jeffery Chiu
-    John G Gentzel
+    GetIntoGameDev
+    HP van Braam
+    iCommitGames
     Jonah Stich
-    Justin Arnold
-    Kamil Brzezinski
-    Marcel Kräml
-    Matthieu Huvé
-    Maxim Karsten
+    Justo Delgado Baudí
+    katnamag
+    Matthew Ekenstedt
+    Memories in 8Bit
     Mike King
-    Nathan Warden
     Neal Gompa (Conan Kudo)
-    Patrick Horn
-    Patrick Schmidt
-    Péter Magyar
-    Rami
+    Radivarig
     Ronnie Cheng
-    Slobodan Milnovic
+    Ryan Heath
+    Scott Pezza
+    ShikadiGum
+    Silver Creek Entertainment
+    SolarLabyrinth
+    Stephan Kessler
     Stephan Lanfermann
-    Steve
-    Thomas Krampl
-    Tristan Pemble
+    TigerJ
     Violin Iliev
-    Xwdit
+    Vladimír Chvátil
+    And 13 anonymous donors
 
-## Gold donors
+## Gold members
 
-    Acheron
-    albinaask
-    Alvaro A Baena R
+    80px
+    afreytes
+    alMoo Games
+    alMoo Games
+    Alva Majo
+    Antti Vesanen
     Asher Glick
-    Barugon
-    Carlo Cabanilla
-    Chris Goddard
-    Christopher Case
-    Daniel James
-    David Gehrig
+    Axthelm
+    Bellbird Studio
+    Benito
+    Benjamin Sarsgard
+    Ben Rog-Wilhelm
+    Bernd Barsuhn
+    BetaTester704
+    Brian Levinsen
+    Brut
+    Bryce Dixon
+    c64cosmin
+    Carlo del Mundo
+    Carl van der Geest
+    Chocolate Software
+    Cindy Trieu
+    ClarkThyLord
+    Codex404
+    cora
+    Daniel Eichler
+    Daniel Krafft
+    David Chen Zhen
+    David Coles
+    David Hubber
     David Snopek
-    Don B
-    Ed Morley
-    Ellen Poe
-    Florian Rämisch
-    Forge
-    Gamejunkey
-    Hoojib
-    Jakub Grzesik
+    Deakcor
+    Delton Ding
+    dfseifert
+    dgehrig
+    dhanielk
+    Distorted Realities
+    Donkung
+    Dono
+    Don't You Know Who I Am? Inc.
+    Dustuu
+    Dylan P.
+    Edelweiss
+    Ends
+    Eren Ogrul
+    Eric Brand
+    Eric Phy
+    Faisal Al-Kubaisi (QatariGameDev)
+    Felix Adam
+    FeralBytes
+    Festzeltgaming.de
+    Frozen Fractal
+    Gaudipern
+    GlassBrick
+    Grau
+    Guangzhou Lingchan
+    Hayden Oliver
+    hiulit
+    Illyan
+    Immaculate Lift Studio
+    Ivan Tabashki
+    Jacob (HACKhalo2 Studios)
+    Jam
+    Jason Cawood
     Javier Roman
-    Joan Fons
-    Johnny IV Young
-    Jon Woodward
-    Karl Werf
-    Klavdij Voncina
-    kuku
-    Lex Steers
-    Luke
-    Maciej Pendolski
-    Manuele Finocchiaro
-    Markus Wiesner
-    Mason Bially
-    Matthew Hillier
-    Michael
-    m kaersten
-    Monster Vial
-    Officine Pixel S.n.c.
-    Rene
-    Retro Village
-    Rob Messick
-    Roland Fredenhagen
-    Ronan Zeegers
-    Sandro Jenny
-    Sarksus
-    Scott B
-    Sean
-    Sergey
+    Jeff Hungerford
+    Jeronimo Schreyer
+    Johannes Wuensch
+    John Gabriel
+    Jonas Yamazaki
+    Jonathan
+    José Canepa
+    Joshua Stelly
+    Kalydi Balázs
+    KAR Games
+    Kiri "ExpiredPopsicle" Artemis
+    KOGA Mitsuhiro (@shiena)
+    korinVR
+    Kristian Kriehl
+    Lars Thießen
+    Lisandro Lorea (Red Mage Games)
+    Logan Apple
+    Luca Junge
+    LyaaaaaGames
+    m1n1ster
+    Manuel Requena
+    Mara Huldra
+    Marek Belski
+    Martin Šenkeřík
+    MHDante
+    Michael Gooch
+    Modus Ponens
+    Moshe Harris
+    Moth
+    Mr. Byte
+    Nassor Paulino da Silva
+    nezticle
+    Niklas Wahrman
+    Nitzan Bueno
+    Niwl Games
+    NotNet
+    Oathbringer
+    Officine Pixel
+    ohanaya3
+    Okatima AB
+    Oleksii Nosov
+    Osirisa
+    Patrick Traynor
+    Petr Malac
+    pirey
+    Rafa Laguna
+    @reilaos
+    Request
+    re:thinc
+    Richard Ivánek
+    Rudi P
+    Sam Leathers
+    Samuel Judd
+    ScoreSpace
+    Shiny Shinken
+    Silverclad Studios
     Sofox
-    Taylor Ritenour
+    Space Kraken Studios
+    spacesloth
+    Spoony Panda
+    TANAKA Yu
+    TaraSophieDev (pls fix #43093)
+    Thad Guidry
+    ThatGamer
+    The Polyglot Programmer
+    TheRiverNyx
+    Thomas Lobig
+    Tim Nedvyga
     Tom Langwaldt
-    Tricky Fat Cat
+    Trevor Slocum
     tukon
-    Vitaliy Sapronenko
-    William Wold
-    xagonist
-    Xeno Coliseum
-    Zaven Muradyan
+    Tyler C
+    Vagastella
+    Vincent Foulon
+    Vojtech Lacina
+    Watchinofoye
+    Weasel Games
+    Wilson Birney
+    Wolfram
+    WuotanStudios.com
+    Zhu Li
+    zikes
+    嗯大爷
+    潘彦圣
 
-    Adam Nakonieczny
-    Adrian Adamiak
-    Alexander J Maynard
-    Alex de la Mare
-    Alexey Dyadchenko
     Alex Khayrullin
-    alice gambrell
-    Andreas Funke
-    Andrew Cunningham
+    Algebrute
+    Andriy
     Antanas Paskauskas
-    Antoni Batchelli
+    Ari
     Arisaka Mayuki
     Arthur S. Muszynski
-    Ben Botwin
-    Brandon Hawkinson
-    Caleb Sizemore
-    Can Eris
+    Cameron Connolly
     Charlie Whitfield
-    Chase Taranto
-    Chelsea Hash
-    Chris Petrich
-    Chris Serino
-    Christian Leth Jeppesen
     Craig Ostrin
-    Craig Smith
-    Cristopher
-    D
-    dan didenko
-    Darrian Little
+    Craig Swain
+    CzechBlueBear
     Dennis Belfrage
-    Dev To be curious
-    Digital Denizen
-    Dimitri Nüscheler
-    Donn Eddy
-    Easypete
-    Edgar Sun
-    Eric Brand
-    Eugenio Hugo Salgüero Jáñez
-    EXUREI
-    flesk
-    F S
-    Gabrielius Vaiškūnas
-    Gary Hulst
-    gavlig
-    General Chicken
-    GGGames.org
-    Guilherme Felipe de C. G. da Silva
-    Harvey Fong
-    Heath Hayes
-    Horváth Péter
-    Hu Hund
-    Jake Burga
+    Emily A. Bellows
+    Felix Winterhalter
+    Fransiska
+    Harry Tumber
     James Couzens
-    Jared
     Jared White
     Jesús Chicharro
     Joel Fivat
-    Joel Höglund
     Johnathan Kupferer
-    Jose Malheiro
-    Jose Manuel Muñoz Perez
-    Joseph Crane
-    Joshie Sparks
-    Joshua Flores
+    Josef Stumpfegger
     Joshua Lesperance
-    Juan T Chen
-    Juan Velandia
-    Judd
-    Julian Todd
-    Juraj Móza
-    JUSTIN CARROLL
-    Justo Delgado Baudí
     Kelteseth
     kickmaniac
-    kinfox
-    Kos
-    Lachie
-    Lain Ballard
-    Laszlo Kiss
-    leetNightshade
-    Leo Fidel R Liban
     Liam Smyth
-    Luc-Frédéric Langis
-    Łukasz Nowak
-    MadScientistCarl
-    Marcelo Dornbusch Lopes
-    Marcus Dobler
-    Marcus Richter
-    Marek Belski
-    Mark Barrett
-    Martin Eigel
-    Martin Kotz
-    Martin Soucek
-    Matt Eunson
-    Matt Greene
-    Matthias Toepp
-    medecau
-    Michael
+    LoparPanda
+    Martin Gulliksson
     Michael Dürwald
     Michael Policastro
-    MightyPossum
-    MikadoSC
-    MuffinManKen
-    nate etan
-    Nick Abousselam
-    Nicole Barovic
+    n00sh
+    Nicolás Monner Sans
+    Nikita Rotskov
     Oliver Dick
-    Oscar Campos
-    Patrick Ting
-    Paul Hocker
-    Paul Von Zimmerman
-    Pavel Kotlyar
-    Pedro Silva
+    Patrick Wuttke
     Pete Goodwin
-    Petr Malac
-    PhaineOfCatz
-    pl
-    Raymond Harris
-    Raz A
-    Rene Tailleur
-    Rhodochrone
-    Ricardo Alcantara
-    Robert Larnach
-    Robert Willes
+    Philip Woods
+    Reilt
+    Rickard Hermanson
+    Rob
     Rob McInroy
-    Rocknight Studios
-    Rodrigo Favarete
-    Ronnie Ashlock
-    Ronny Mühle
-    Ryan Scott
-    Ryszard Sommefeldt
-    Samuel Judd
-    Sean Morgan
-    Sebastian Hutter
-    Sébastien
-    Serban Serafimescu
-    Sergey Fonaryov
-    Sergey Minakov
-    Shishir Tandale
-    SKison
-    Song Junwoo
+    RodZilla
+    Ruzgud
+    Ryan Breaker
+    "Sage Automatic Systems, LLC"
     spacechase0
-    Stephan Hennion
-    Steven Landow
-    Stoned Xander
-    Sven F.
-    Thomas Bjarnelöf
+    sus
     Thomas Kurz
-    Tim Howard
     Tobias Bocanegra
-    Todd Smith
-    Turntsnaco
-    tweaklab
+    Torbulous
+    toto bibi
     Valryia
-    Vincent Cloutier
-    Vlad Ceru Opran
     VoidPointer
-    voxelv
-    Wojciech Chojnacki
-    xzibiting
-    Yuancheng Zhang
-    Zhou Tuizhi
-    Zie Weaver
-    Zoran Kukulj
+    Yifan Lai
 
-## Silver donors
-
-    1D_Inc
-    Abraham Haskins
-    Adam
-    Adam Brown
-    Adam Brunnmeier
     Adam Carr
-    Adam Long
-    Adam McCurdy
-    Adam N Webber
     Adam Smeltzer
-    Adam Szymański
     Adisibio
-    Agar3s - Giovanny Beltrán
-    Agustinus Arya
-    Ahmet Kalyoncu
+    Aidan Marwick
     Aidan O'Flannagain
-    Aki Mimoto
+    AJWolbers
     Alan Beauchamp
-    Alberto Vilches
-    Albin Jonasson Svärdsby
-    Alder Stefano
-    AleMax
-    Alessandro Senese
     Alexander Erlemann
-    Alexander Ryndin
-    Alexander Walter (SilvanuZ)
-    Alexandre Beaudoin
-    alex clavelle
-    Alex (Well Done Games)
-    Allan Davis
-    Allen Schade
-    Anders Marstein Kruke
-    Andreas Krampitz
-    Andre Stackhouse
-    andrew james morris
-    Andrew Mansuetti
-    Andrew Thomas
+    Alex Clavelle
+    alex raeside
+    Andre Altmueller
+    Andreas Østergaard Nielsen
+    Andrew
     Ano Nim
-    Anthony Avina
-    Anton Bouwer
-    aomimezura11
-    AP Condomines
     Arch Toasty
     Arda Erol
-    Armin Preiml
-    Arseniy M
-    Ashley Claymore
-    Astier Mickael
+    Arturo Rosales
+    Ash K
     Aubrey Falconer
+    Austin Miller
     AzulCrescent
-    Balázs Batári
-    Bartosz Bielecki
+    Beau Seymour
     Benedikt
-    Ben Vercammen
-    Bernd Jänichen
-    Bernhard Werner
-    Bjarne Voigtländer
-    Black Block
-    blackjacksike
-    Blair Allen
-    Bobby CC Wong
-    Borkzilla
-    Boyd Trolinger
-    Bram
-    brian
-    Brian Klein
-    Brodie Fairhall
-    Bronson Zgeb
-    Bùi Việt Thành
-    Burney Waring
-    bwhirt
-    Caleb Gartner
+    Bread
+    Brian Ford
+    Caleb Makela
     Cameron Meyer
-    Carlos Cejudo
     Carl van der Geest
-    Carwyn Edwards
-    Cas Brugman
-    Cassidy James
-    Cédric Givord
-    Chad Steadman
-    Charles Alston
-    Chris Chapin
-    Chris Langford
-    Christian Clavet
+    Checkpoint Charlie
+    Chris Cavalluzzi
+    Chris Jagusch
+    Chris Lee
     Christian Mauduit
-    Christian Winter
-    Christoffer Dahlblom
+    Christian Ringshofer
+    Christoph Czurda
     Christophe Gagnier
-    Christopher Chin
-    Christopher Schmitt
-    Chris Truebe
-    Clay Heaton
     Cody Parker
     Conall O
-    Craig Post
-    CzechBlueBear
-    Daniel Cheney
-    Daniel Johnson
-    DanielMaximiano
+    Corchari
+    Corey W
+    Dakota Watkins
+    Daniele Tolomelli
+    Daniel Ramos
     Daren Scot Wilson
-    Dave Walker
+    Dave Jansen
+    Davesnothere
+    David Baker
     David Bôle
     David May
     David Maziarka
-    David Woodard
-    deadwithbread
     Devin Carraway
-    Diego Pereira
-    Dmitry Fisher
-    Dmytro Korchynskyi
-    Dominik Wetzel
-    Douglas Plumley
-    Dragontrapper
-    Dr Ewan Murray
-    Dr.Raccoon
-    Duobix
+    Devin R
+    Dimitri Roche
+    Donovan Hutcheon
+    Ducky
     Duodecimal
-    DurrDiss
-    Eduardo Teixeira
-    Edward Herbert
-    Edward Swartz
     Egon Elbre
-    Elgenzay
-    Elias Nykrem
-    Ephemeral
+    Elijah Anderson
+    Eric Persson
     Eric Stokes
-    Eric Walkingshaw
     Eric Williams
     Erkki Seppälä
-    Evan Rose
-    Faisal Alkubaisi
-    Fancy Ants Studios
-    fby
-    Fekinox
-    Felix Bohmann
-    Flaredown
-    Forty Doubleu
-    Francois Holland
     Frank
+    Frying☆Pan
     Game Endeavor
-    Gareth Knowles
+    gamerminstrel
+    Garrett S
     Gary Thomas
-    George Marques
-    georgios katsanakis
-    GFizz
-    Greg Lincoln
-    Greg Olson
+    gebba
     Greyson Richey
-    Grid
-    Guillaume Audirac
-    Guillaume Pham Ngoc
-    Guldoman
-    Gustavo Loureiro dos Reis
-    Hal A
-    helija
+    Guo Hongci
+    Haplo
+    Helge Maus
     Heribert Hirth
-    Hunter Jones
+    Ian Richard Kunert
     Ian Williams
-    Iiari
-    IndustrialRobot
-    Ivan Nikolaev
+    itsybitesyspider
     iveks
-    Jackson Harmer
-    Jacob
-    Jaguar
-    Jaime Ruiz-Borau Vizárraga
-    Jake D
-    Jake Huxell
+    Jacob Wallace
     Jako Danar
-    James
-    James A F Manley
-    James Quincy
-    James Thomas
+    James Gary
+    James Hulsizer
     Jamie Massey
-    Jan Vetulani
     JARKKO PARVIAINEN
-    Jason Bolton
-    Jason Uechi
-    Jeff Hungerford
-    Jennifer Graves
-    Jesse Dubay
-    Jhon Adams
-    Joe Klemmer
-    John Gabriel
-    Jonah Branch
+    Jason Evans
     Jonas
-    Jonas Bernemann
-    Jonas Rudlang
+    Jonas Arndt
     Jonas Yamazaki
-    Jonatan R
-    Jonathan G
-    Jon Bonazza
-    Jon Oakes
+    Jonathan Bieber
     Jon Sully
-    Jordy Goodridge
-    Jorge Antunes
-    Jorge Araya Navarro
-    Jose C. Rubio
     Joseph Catrambone
-    Josep Sanchez
     Josh Taylor
-    Joshua Heidrich
-    jromkjrom
     Juanfran
-    Juan Uys
-    Jueast
-    Julian Murgia
-    June Little
-    Justin Hamilton
-    Justin Oaksford
+    Julian le Roux
     Justin Spedding
-    Justin W. Flory
-    KaDokta
-    Kalin
-    Keedong Park
-    Keinan Powers
     Keith Bradner
-    Kenji Kawabata
-    Ken Minardo
-    Kenneth Lee
-    Kent Jofur
-    Ketafuki
-    Kiri Jolly
-    Kjetil Haugland
-    Konstantin Goncharov
-    Kridsada Thanabulpong
-    Kristian Nygaard Jensen
+    kindzadza
     KsyTek Games
-    kycho
+    Kyle Burnett
+    Kyle Haltermann
     Kyle Jacobs
-    Kyuppin
-    Lasse le Dous
-    Laurent CHEA
-    Laurent Tréguier
-    Laxman Pradhan
-    LEMMiNO
-    Leonardo Dimano
-    Lin Chear
+    Leland Vakarian
+    Levi Berciu
+    liberodark
     Linus Lind Lundgren
+    Ludovic DELVAL
     Luigi Renna
-    Luis Gaemperle
-    Luis M
-    LunaticInAHat
+    Luis Morao
+    Lukas Komischke
+    Luke Diasio
     Major Haul
-    makoto asano
     Malcolm
-    Marco Lardelli
-    Mark Jad
-    Mark Malone
-    Markus Martin
+    Manuele Finocchiaro
+    Marcos Heitor Carvalho
+    Markie Music
+    Mark Tyler
     Markus Michael Egger
-    Martin FIbik
     Martin Holas
+    Martin Liška
     Martin Trbola
-    Marvin
     Mathieu
     Matt Edwards
-    Matthew Booe
-    Matt Sylvia
-    Max Fiedler
+    Maverick
     Maxime Blade
     Maxwell
-    Megasploot
     Melissa Mears
-    Merlyn Morgan-Graham
-    mewin
-    Michael
-    Michael Bruce-Lockhart
-    Michael Haney
-    Michał Skwarek
-    MidoriBunn 'tis BS
-    Mikayla
-    Mike
-    Mike Birkhead
+    Metal Demon 2000
+    Michael Morrison
     Mike Copley
-    Mike Cunningham
-    Mitchell J. Wagner
-    MJacred
-    Molinghu
     Molly Jameson
-    MrAZIE
-    Nathan Fish
+    Moritz Weissenberger
+    Mrjemandem
+    naonya3
     Nathaniel
-    nee
     neighty
     Neil Blakey-Milner
-    Neil Wang
+    Neofytos Chimonas
     Nerdforge
     Nerdyninja
-    Nicholas
-    Nick Macholl
-    Niclas Eriksen
-    Nicolas Goll-Perrier
-    Nicolas Rosset
-    Nicolas SAN AGUSTIN
-    Nima Farid
-    NZ
-    oceoh
-    Okatima
-    OKV
-    Oleg Reva
-    Oleksandr Kryvonos
-    Omar Delarosa
-    Oriol Muñoz Princep
-    Oscar Domingo
-    Patrick Brock
+    Nik Rudenko
+    Noel Billig
+    ozrk
+    Patrick Horn
+    Patrickm
     Patrick Nafarrete
+    Paul Black
     Paul Gieske
-    Paweł Kowal
-    Paweł Łyczkowski
-    Peter Höglund
-    Peter Richmond
-    Petrus Prinsloo
-    Philip Cohoe
-    Philip Ludington (MrPhil)
+    Pete
+    Phoenix Jauregui
     Pierre Caye
-    Piotr Góral
+    Pixel Archipel
     Point08
-    Preethi Vaidyanathan
-    pwab
-    Rad Cat
-    Rafa Laguna
-    Raffaele Aramo
-    Rami Hanano
-    RAMupgrade
-    Remi Rampin
-    Rémi Verschelde
-    Reneator
-    Riccardo Marini
-    Richard Ivánek
+    PsycHead
+    Quincy Quincy
+    Quinn Morrison
+    Raghava Kovvali
+    Ragnar Pettersson
+    Rammeow
+    Richard Hayes
     Riley
-    Robert Farr (Larington)
-    Rob Ruana
-    Roger Smith
+    RobotCritter
     Roland Rząsa
-    Roman Tinkov
-    Ronald Ho Hip (CrimsonZA)
-    Ronan
-    Ross Squires
+    Russ
     Ryan Groom
-    Sam Caulfield
-    Sam Edson
-    Samuele Zolfanelli
-    scapegoat57
-    Scott D. Yelich
-    Scott Longley
-    Sean Lynch
+    Sammy Fischer
+    Satnam Singh
     Sebastian Michailidis
     SeongWan Kim
-    Sergey
-    Sergiy Onenko
-    Shane
-    Shane Sicienski
+    Shane Lillie
     Shane Spoor
-    Siim Raidma
-    simdee
+    Shaun Kohanowski
     Simon Jonas Larsen
     Simon Schoenenberger
-    Simon Wenner
+    Sina Yeganeh
     Skalli
-    smbe19
+    slavfox
     smo1704
-    soft circles
-    Squirrel
-    Stéphane Roussel
-    Steve Cloete
-    summerblind
-    Sung soo Choi
-    Svenne Krap
+    SpicyCactuar
+    Stephen Rice
+    Stephen Schlie
+    Sven Walter
+    SxP
     tadashi endo
-    tannhauser_gate
     Tarch
-    Terry
-    Theodore Lindsey
     TheVoiceInMyHead
+    Thibaut DECROMBECQUE
     thomas
-    Thomas Bechtold
-    Thomas Detoy
-    Thomas Horwath
+    Thomas Pickett
     Tim Drumheller
-    Tim Erskine
-    Tim Gleason
-    Timothy B. MacDonald
-    TMoney
-    Tobias Bradtke
-    Tom Coxon
-    Toni Duran
-    Tony Zhao
-    Torgeir Lilleskog
-    Torsten Crass
-    toupeira
-    Travis O'Brien
+    Tim Klein
+    Tom Webster
     Trent Skinner
-    tril zerobyte
-    Triumph263 .
-    Troy Bonneau
-    Tryggve Sollid
-    Turgut Temucin
-    Tyler Compton
-    Tyler Stafos
-    UltyX
+    Tyler Stepke
     Uther
     Vaughan Ling
-    Victor
-    Viktor Ismagilov
-    Vi Watch
-    Vladimir Savin
-    Vladislav Smirnov
-    Vytenis Narušis
-    waka nya
-    Wayne Haak
-    werner mendizabal
+    vlnx
+    Wapiti .
     Wiley Thompson
-    William Edwards
-    William F Siqueira
-    William Hogben
-    Wyatt Goodin
-    x1212
-    xenomat
-    Yegor Smirnov
-    Zak Stephens
-    Эльдар Будагов
-    蕭惟允
+    Xatonym
+    Zekim
+    ケルベロス
+    貴宏 小松
 
-## Bronze donors
+    And 176 anonymous donors
+
+## Silver and bronze donors
 
 There are even more donors that support the project with a small monthly donation.
 Every bit counts and we thank every one of them for their amazing support!

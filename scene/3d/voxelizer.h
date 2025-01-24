@@ -1,45 +1,51 @@
-/*************************************************************************/
-/*  voxelizer.h                                                          */
-/*************************************************************************/
-/*                       This file is part of:                           */
-/*                           GODOT ENGINE                                */
-/*                      https://godotengine.org                          */
-/*************************************************************************/
-/* Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur.                 */
-/* Copyright (c) 2014-2021 Godot Engine contributors (cf. AUTHORS.md).   */
-/*                                                                       */
-/* Permission is hereby granted, free of charge, to any person obtaining */
-/* a copy of this software and associated documentation files (the       */
-/* "Software"), to deal in the Software without restriction, including   */
-/* without limitation the rights to use, copy, modify, merge, publish,   */
-/* distribute, sublicense, and/or sell copies of the Software, and to    */
-/* permit persons to whom the Software is furnished to do so, subject to */
-/* the following conditions:                                             */
-/*                                                                       */
-/* The above copyright notice and this permission notice shall be        */
-/* included in all copies or substantial portions of the Software.       */
-/*                                                                       */
-/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,       */
-/* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF    */
-/* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.*/
-/* IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY  */
-/* CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,  */
-/* TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE     */
-/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
-/*************************************************************************/
+/**************************************************************************/
+/*  voxelizer.h                                                           */
+/**************************************************************************/
+/*                         This file is part of:                          */
+/*                             GODOT ENGINE                               */
+/*                        https://godotengine.org                         */
+/**************************************************************************/
+/* Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md). */
+/* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
+/*                                                                        */
+/* Permission is hereby granted, free of charge, to any person obtaining  */
+/* a copy of this software and associated documentation files (the        */
+/* "Software"), to deal in the Software without restriction, including    */
+/* without limitation the rights to use, copy, modify, merge, publish,    */
+/* distribute, sublicense, and/or sell copies of the Software, and to     */
+/* permit persons to whom the Software is furnished to do so, subject to  */
+/* the following conditions:                                              */
+/*                                                                        */
+/* The above copyright notice and this permission notice shall be         */
+/* included in all copies or substantial portions of the Software.        */
+/*                                                                        */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,        */
+/* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF     */
+/* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. */
+/* IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY   */
+/* CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,   */
+/* TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE      */
+/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
+/**************************************************************************/
 
-#ifndef VOXEL_LIGHT_BAKER_H
-#define VOXEL_LIGHT_BAKER_H
+#ifndef VOXELIZER_H
+#define VOXELIZER_H
 
-#include "core/math/vector3i.h"
-#include "scene/3d/mesh_instance_3d.h"
 #include "scene/resources/multimesh.h"
 
 class Voxelizer {
-private:
-	enum {
-		CHILD_EMPTY = 0xFFFFFFFF
+public:
+	enum BakeResult {
+		BAKE_RESULT_OK,
+		BAKE_RESULT_INVALID_PARAMETER,
+		BAKE_RESULT_CANCELLED,
+	};
 
+	typedef bool (*BakeStepFunc)(int, int);
+
+private:
+	enum : uint32_t {
+		CHILD_EMPTY = 0xFFFFFFFF
 	};
 
 	struct Cell {
@@ -66,13 +72,13 @@ private:
 
 	struct CellSort {
 		union {
+			uint64_t key = 0;
 			struct {
 				uint64_t z : 16;
 				uint64_t y : 16;
 				uint64_t x : 16;
 				uint64_t level : 16;
 			};
-			uint64_t key = 0;
 		};
 
 		int32_t index = 0;
@@ -88,12 +94,13 @@ private:
 		Vector<Color> emission;
 	};
 
-	Map<Ref<Material>, MaterialCache> material_cache;
+	HashMap<Ref<Material>, MaterialCache> material_cache;
+	float exposure_normalization = 1.0;
 	AABB original_bounds;
 	AABB po2_bounds;
 	int axis_cell_size[3] = {};
 
-	Transform to_cell_space;
+	Transform3D to_cell_space;
 
 	int color_scan_cell_width = 4;
 	int bake_texture_size = 128;
@@ -113,22 +120,23 @@ private:
 	void _sort();
 
 public:
-	void begin_bake(int p_subdiv, const AABB &p_bounds);
-	void plot_mesh(const Transform &p_xform, Ref<Mesh> &p_mesh, const Vector<Ref<Material>> &p_materials, const Ref<Material> &p_override_material);
+	void begin_bake(int p_subdiv, const AABB &p_bounds, float p_exposure_normalization);
+	int get_bake_steps(Ref<Mesh> &p_mesh) const;
+	BakeResult plot_mesh(const Transform3D &p_xform, Ref<Mesh> &p_mesh, const Vector<Ref<Material>> &p_materials, const Ref<Material> &p_override_material, BakeStepFunc p_bake_step_function);
 	void end_bake();
 
-	int get_gi_probe_octree_depth() const;
-	Vector3i get_giprobe_octree_size() const;
-	int get_giprobe_cell_count() const;
-	Vector<uint8_t> get_giprobe_octree_cells() const;
-	Vector<uint8_t> get_giprobe_data_cells() const;
-	Vector<int> get_giprobe_level_cell_count() const;
-	Vector<uint8_t> get_sdf_3d_image() const;
+	int get_voxel_gi_octree_depth() const;
+	Vector3i get_voxel_gi_octree_size() const;
+	int get_voxel_gi_cell_count() const;
+	Vector<uint8_t> get_voxel_gi_octree_cells() const;
+	Vector<uint8_t> get_voxel_gi_data_cells() const;
+	Vector<int> get_voxel_gi_level_cell_count() const;
+	BakeResult get_sdf_3d_image(Vector<uint8_t> &r_image, BakeStepFunc p_bake_step_function) const;
 
 	Ref<MultiMesh> create_debug_multimesh();
 
-	Transform get_to_cell_space_xform() const;
+	Transform3D get_to_cell_space_xform() const;
 	Voxelizer();
 };
 
-#endif // VOXEL_LIGHT_BAKER_H
+#endif // VOXELIZER_H

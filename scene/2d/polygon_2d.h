@@ -1,37 +1,40 @@
-/*************************************************************************/
-/*  polygon_2d.h                                                         */
-/*************************************************************************/
-/*                       This file is part of:                           */
-/*                           GODOT ENGINE                                */
-/*                      https://godotengine.org                          */
-/*************************************************************************/
-/* Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur.                 */
-/* Copyright (c) 2014-2021 Godot Engine contributors (cf. AUTHORS.md).   */
-/*                                                                       */
-/* Permission is hereby granted, free of charge, to any person obtaining */
-/* a copy of this software and associated documentation files (the       */
-/* "Software"), to deal in the Software without restriction, including   */
-/* without limitation the rights to use, copy, modify, merge, publish,   */
-/* distribute, sublicense, and/or sell copies of the Software, and to    */
-/* permit persons to whom the Software is furnished to do so, subject to */
-/* the following conditions:                                             */
-/*                                                                       */
-/* The above copyright notice and this permission notice shall be        */
-/* included in all copies or substantial portions of the Software.       */
-/*                                                                       */
-/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,       */
-/* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF    */
-/* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.*/
-/* IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY  */
-/* CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,  */
-/* TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE     */
-/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
-/*************************************************************************/
+/**************************************************************************/
+/*  polygon_2d.h                                                          */
+/**************************************************************************/
+/*                         This file is part of:                          */
+/*                             GODOT ENGINE                               */
+/*                        https://godotengine.org                         */
+/**************************************************************************/
+/* Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md). */
+/* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
+/*                                                                        */
+/* Permission is hereby granted, free of charge, to any person obtaining  */
+/* a copy of this software and associated documentation files (the        */
+/* "Software"), to deal in the Software without restriction, including    */
+/* without limitation the rights to use, copy, modify, merge, publish,    */
+/* distribute, sublicense, and/or sell copies of the Software, and to     */
+/* permit persons to whom the Software is furnished to do so, subject to  */
+/* the following conditions:                                              */
+/*                                                                        */
+/* The above copyright notice and this permission notice shall be         */
+/* included in all copies or substantial portions of the Software.        */
+/*                                                                        */
+/* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,        */
+/* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF     */
+/* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. */
+/* IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY   */
+/* CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,   */
+/* TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE      */
+/* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 */
+/**************************************************************************/
 
 #ifndef POLYGON_2D_H
 #define POLYGON_2D_H
 
 #include "scene/2d/node_2d.h"
+
+class NavigationPolygon;
+class NavigationMeshSourceGeometryData2D;
 
 class Polygon2D : public Node2D {
 	GDCLASS(Polygon2D, Node2D);
@@ -72,10 +75,12 @@ class Polygon2D : public Node2D {
 
 	void _skeleton_bone_setup_changed();
 
+	RID mesh;
+
 protected:
 	void _notification(int p_what);
 	static void _bind_methods();
-	void _validate_property(PropertyInfo &property) const override;
+	void _validate_property(PropertyInfo &p_property) const;
 
 public:
 #ifdef TOOLS_ENABLED
@@ -85,11 +90,14 @@ public:
 	virtual void _edit_set_pivot(const Point2 &p_pivot) override;
 	virtual Point2 _edit_get_pivot() const override;
 	virtual bool _edit_use_pivot() const override;
+#endif // TOOLS_ENABLED
+
+#ifdef DEBUG_ENABLED
 	virtual Rect2 _edit_get_rect() const override;
 	virtual bool _edit_use_rect() const override;
 
 	virtual bool _edit_is_selected_on_click(const Point2 &p_point, double p_tolerance) const override;
-#endif
+#endif // DEBUG_ENABLED
 
 	void set_polygon(const Vector<Vector2> &p_polygon);
 	Vector<Vector2> get_polygon() const;
@@ -118,9 +126,6 @@ public:
 	void set_texture_rotation(real_t p_rot);
 	real_t get_texture_rotation() const;
 
-	void set_texture_rotation_degrees(real_t p_rot);
-	real_t get_texture_rotation_degrees() const;
-
 	void set_texture_scale(const Size2 &p_scale);
 	Size2 get_texture_scale() const;
 
@@ -148,7 +153,16 @@ public:
 	void set_skeleton(const NodePath &p_skeleton);
 	NodePath get_skeleton() const;
 
+private:
+	static Callable _navmesh_source_geometry_parsing_callback;
+	static RID _navmesh_source_geometry_parser;
+
+public:
+	static void navmesh_parse_init();
+	static void navmesh_parse_source_geometry(const Ref<NavigationPolygon> &p_navigation_mesh, Ref<NavigationMeshSourceGeometryData2D> p_source_geometry_data, Node *p_node);
+
 	Polygon2D();
+	~Polygon2D();
 };
 
 #endif // POLYGON_2D_H

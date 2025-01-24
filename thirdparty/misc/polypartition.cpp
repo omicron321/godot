@@ -23,6 +23,8 @@
 
 #include "polypartition.h"
 
+#include <math.h>
+#include <string.h>
 #include <algorithm>
 
 TPPLPoly::TPPLPoly() {
@@ -260,7 +262,7 @@ int TPPLPartition::RemoveHoles(TPPLPolyList *inpolys, TPPLPolyList *outpolys) {
           }
         }
         pointvisible = true;
-        for (iter2 = polys.front(); iter2; iter2->next()) {
+        for (iter2 = polys.front(); iter2; iter2 = iter2->next()) {
           if (iter2->get().IsHole()) {
             continue;
           }
@@ -1289,7 +1291,7 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
   bool error = false;
 
   numvertices = 0;
-  for (iter = inpolys->front(); iter; iter++) {
+  for (iter = inpolys->front(); iter; iter = iter->next()) {
     numvertices += iter->get().GetNumPoints();
   }
 
@@ -1298,7 +1300,7 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
   newnumvertices = numvertices;
 
   polystartindex = 0;
-  for (iter = inpolys->front(); iter; iter++) {
+  for (iter = inpolys->front(); iter; iter = iter->next()) {
     poly = &(iter->get());
     polyendindex = polystartindex + poly->GetNumPoints() - 1;
     for (i = 0; i < poly->GetNumPoints(); i++) {
@@ -1355,12 +1357,12 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
   // Note that while set doesn't actually have to be implemented as
   // a tree, complexity requirements for operations are the same as
   // for the balanced binary search tree.
-  Set<ScanLineEdge> edgeTree;
+  RBSet<ScanLineEdge> edgeTree;
   // Store iterators to the edge tree elements.
   // This makes deleting existing edges much faster.
-  Set<ScanLineEdge>::Element **edgeTreeIterators, *edgeIter;
-  edgeTreeIterators = new Set<ScanLineEdge>::Element *[maxnumvertices];
-  //Pair<Set<ScanLineEdge>::iterator, bool> edgeTreeRet;
+  RBSet<ScanLineEdge>::Element **edgeTreeIterators, *edgeIter;
+  edgeTreeIterators = new RBSet<ScanLineEdge>::Element *[maxnumvertices];
+  //Pair<RBSet<ScanLineEdge>::iterator, bool> edgeTreeRet;
   for (i = 0; i < numvertices; i++) {
     edgeTreeIterators[i] = nullptr;
   }
@@ -1408,7 +1410,7 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
         newedge.p1 = v->p;
         newedge.p2 = v->p;
         edgeIter = edgeTree.lower_bound(newedge);
-        if (edgeIter == edgeTree.front()) {
+        if (edgeIter == nullptr || edgeIter == edgeTree.front()) {
           error = true;
           break;
         }
@@ -1449,7 +1451,7 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
         newedge.p1 = v->p;
         newedge.p2 = v->p;
         edgeIter = edgeTree.lower_bound(newedge);
-        if (edgeIter == edgeTree.front()) {
+        if (edgeIter == nullptr || edgeIter == edgeTree.front()) {
           error = true;
           break;
         }
@@ -1494,7 +1496,7 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
           newedge.p1 = v->p;
           newedge.p2 = v->p;
           edgeIter = edgeTree.lower_bound(newedge);
-          if (edgeIter == edgeTree.front()) {
+          if (edgeIter == nullptr || edgeIter == edgeTree.front()) {
             error = true;
             break;
           }
@@ -1567,8 +1569,8 @@ int TPPLPartition::MonotonePartition(TPPLPolyList *inpolys, TPPLPolyList *monoto
 
 // Adds a diagonal to the doubly-connected list of vertices.
 void TPPLPartition::AddDiagonal(MonotoneVertex *vertices, long *numvertices, long index1, long index2,
-        TPPLVertexType *vertextypes, Set<ScanLineEdge>::Element **edgeTreeIterators,
-        Set<ScanLineEdge> *edgeTree, long *helpers) {
+	TPPLVertexType *vertextypes, RBSet<ScanLineEdge>::Element **edgeTreeIterators,
+	RBSet<ScanLineEdge> *edgeTree, long *helpers) {
   long newindex1, newindex2;
 
   newindex1 = *numvertices;
